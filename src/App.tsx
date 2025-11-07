@@ -192,7 +192,7 @@ export default function App() {
                         <a href="#contact" className="text-gray-700 dark:text-gray-200 hover:text-emerald-600 transition">Contact</a>
                         <a
                             id="resume-btn"
-                            href="/Mira_Saini_Resume_2025.pdf" // Replace with your file path
+                            href="./Mira_Saini_Resume_2025.pdf" // Replace with your file path
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 rounded-full border border-emerald-300 dark:border-emerald-700 px-3 py-1.5 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-50 dark:hover:bg-emerald-900/40 transition"
@@ -218,7 +218,7 @@ export default function App() {
                     <div className="mt-6 flex sm:hidden justify-center gap-3">
                         <a
                             id="resume-btn-mobile"
-                            href="/Mira_Saini_Resume_2025.pdf"
+                            href="./Mira_Saini_Resume_2025.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 rounded-full border border-emerald-300 px-4 py-2 text-emerald-700 hover:bg-emerald-50"
