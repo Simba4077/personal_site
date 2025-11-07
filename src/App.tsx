@@ -95,7 +95,7 @@ export default function App() {
     {
         role: "Generative AI Research Lead",
         company: "Tech4Good Lab — UC Santa Cruz",
-        range: "Dec 2024 – Present",
+        range: "Dec 2025 – Present",
         bullets: [
         // FALL 2025 — UCSC Community Bot
         (
@@ -141,7 +141,7 @@ export default function App() {
             </>
         ),
 
-        // WINTER 2024 → Actually Winter 2025 (but leaving as requested)
+    
         (
             <>
             <div className="flex gap-2 items-start mt-4">
