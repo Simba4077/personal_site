@@ -54,11 +54,11 @@ export default function App() {
             {
                 title: "AddIt — Event Poster → Google Calendar (Streamlit + Gemini)",
                 summary:
-                    "AI workflow to parse event posters → extract title/time/location → auto-create Google Calendar events. ~80% time reduction (≈30–60s → under 10s). ~95%+ field-extraction accuracy across ~50 posters; Streamlit UI for verify/edit; robust parsing+error handling.",
+                    "A lightweight tool that helps students turn event posters into Google Calendar events in just a few seconds. Instead of manually typing details from flyers, AddIt extracts the title, date, time, and location, then drafts an event for quick review + save. Built originally in Streamlit with Gemini; helped reduce the typical “poster → calendar” workflow from about a minute to under 10 seconds.",
                 tags: ["LLMs", "Python", "Streamlit", "Google Calendar API"],
                 links: {
                     demo: "DEMO_LINK_HERE",
-                    repo: "REPO_LINK_HERE",
+                    repo: "https://github.com/Simba4077/Add-It",
                     doc: "DOC_LINK_HERE",
                 },
                 featuredColor: "emerald",
@@ -66,25 +66,25 @@ export default function App() {
             {
                 title: "NumPy CNN — CIFAR-10 Image Classifier",
                 summary:
-                    "Built CNN from first principles (conv/pool/activations/FC) using NumPy with full train/val/test pipeline + metrics. Achieved ~50–60% on CIFAR-10.",
+                    "A simple experiments-driven project where I implemented core CNN operations (convolution, pooling, activations, fully-connected layers) from scratch in NumPy. I wanted to better understand how image classifiers work under the hood — not just call a library. The model reached ~50–60% accuracy on CIFAR-10.",
                 tags: ["Python", "CNN", "NumPy", "ML"],
-                links: { demo: "DEMO_LINK_HERE", repo: "REPO_LINK_HERE", doc: "DOC_LINK_HERE" },
+                links: { demo: "DEMO_LINK_HERE", repo: "https://github.com/Simba4077/Convolutional-Neural-Network", doc: "DOC_LINK_HERE" },
                 featuredColor: "sky",
             },
             {
                 title: "MLP MNIST Classifier — Training Pipeline",
                 summary:
-                    "Minimal MLP training loop (split, batching, accuracy/loss) + preprocessing (normalization/reshape). >97% accuracy on MNIST.",
+                    "A minimal handwritten-digit classifier trained on MNIST using a custom MLP training loop. Focused on understanding data prep, batching, accuracy + loss tracking, and model evaluation. Achieved >97% accuracy.",
                 tags: ["MLP", "NumPy", "MNIST"],
-                links: { demo: "DEMO_LINK_HERE", repo: "REPO_LINK_HERE", doc: "DOC_LINK_HERE" },
+                links: { demo: "DEMO_LINK_HERE", repo: "https://github.com/Simba4077/MLP-MNIST-Classifier", doc: "DOC_LINK_HERE" },
                 featuredColor: "emerald",
             },
             {
                 title: "English–Dutch Language Classifier",
                 summary:
-                    "Three training pipelines (Log Reg, SVM, Perceptron) with custom feature extraction on translated texts; achieved 100% accuracy on held-out test set.",
+                    "A small language-classification project comparing three traditional ML models — logistic regression, SVM, and perceptron — on translated text samples. It was a fun way to explore feature extraction + evaluation. Models reached 100% accuracy on a held-out dataset.",
                 tags: ["Feature Extraction", "SVM", "Logistic Regression", "Perceptron"],
-                links: { demo: "DEMO_LINK_HERE", repo: "REPO_LINK_HERE", doc: "DOC_LINK_HERE" },
+                links: { demo: "DEMO_LINK_HERE", repo: "https://github.com/Simba4077/English-Dutch-Classification", doc: "DOC_LINK_HERE" },
                 featuredColor: "sky",
             },
         ],
@@ -92,19 +92,89 @@ export default function App() {
     );
 
     const experiences = [
-        {
-            role: "Generative AI Research Lead",
-            company: "Tech4Good Lab — UC Santa Cruz",
-            range: "Dec 2024 – Present",
-            bullets: [
-                "Generative AI Education Paper (Journal Submission Pending): Co-designed and TA’d UCSC Generative AI in Business Strategy course (140 students); mentored 23+ students; authored 50% of lab assignments + all grading rubrics; conducted 3 interviews + 300+ transcript annotations for research.",
-                "Community RAG Platform — Summer 2025: Led scalable career-guidance prototype integrating 200+ professional transcripts; produced 3+ Figma storyboards; managed 10 undergraduates across 5 design cycles.",
-                "Community UCSC Bot — Fall 2025 (Demo: DEMO_LINK_HERE): Directed 6-member team; used Pinecone + custom schemas; added tool-calling + contextual routing; built LLM auto-invite workflow; analyzed 1,000+ logs to reduce hallucination.",
-            ],
-            accent: "emerald",
-            demo: "DEMO_LINK_HERE",
+    {
+        role: "Generative AI Research Lead",
+        company: "Tech4Good Lab — UC Santa Cruz",
+        range: "Dec 2024 – Present",
+        bullets: [
+        // FALL 2025 — UCSC Community Bot
+        (
+            <>
+            <div className="flex gap-2 items-start">
+                <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                Fall 2025
+                </span>
+                <span className="font-semibold">UCSC Community Bot</span>
+            </div>
+            <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
+                Evolved our summer RAG prototype into a campus assistant used by 300+ students. Directed a 6-person
+                engineering team, improved retrieval + routing, and built an LLM-driven auto-invite flow that places
+                students into topic channels for more relevant help. Analyzed 1,000+ logs to reduce hallucinations and
+                strengthen grounding.{" "}
+                <a
+                href="https://drive.google.com/file/d/1FqvDF3aC3a-GJtuVDR3YyWkuZmup6CzL/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                className="underline text-sky-700 dark:text-sky-300"
+                >
+                Check out our current demo
+                </a>
+                .
+            </div>
+            </>
+        ),
+
+        // SUMMER 2025 — Community RAG Platform
+        (
+            <>
+            <div className="flex gap-2 items-start mt-4">
+                <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                Summer 2025
+                </span>
+                <span className="font-semibold">Community RAG Platform (prototype)</span>
+            </div>
+            <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
+                Built an early career-guidance prototype that organizes 200+ professional transcripts so students can
+                explore paths with less guesswork. Led design + data structuring, produced multiple Figma storyboard
+                iterations, and coordinated 5 design cycles with feedback from 3 PhD researchers + the PI.
+            </div>
+            </>
+        ),
+
+        // WINTER 2024 → Actually Winter 2025 (but leaving as requested)
+        (
+            <>
+            <div className="flex gap-2 items-start mt-4">
+                <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                Winter 2025
+                </span>
+                <span className="font-semibold">Generative AI Education Study</span>
+            </div>
+            <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
+                Helped run a 140-student “Generative AI in Business Strategy” course. Co-designed labs + rubrics,
+                mentored 23 students, and analyzed interviews + 28 transcripts (300+ annotations) to understand how
+                students use AI to plan, debug, and problem-solve, contributing to a research paper in progress.
+            </div>
+            </>
+        ),
+
+        // Optional evolution marker
+        (
+            <div className="mt-4 text-xs italic opacity-80 ml-2">
+            Evolution: <span className="font-medium">Community RAG → UCSC Community Bot</span>
+            </div>
+        ),
+        ],
+
+        links: {
+        demo: "https://drive.google.com/file/d/1FqvDF3aC3a-GJtuVDR3YyWkuZmup6CzL/view?usp=sharing",
         },
+        accent: "emerald",
+        demo: "https://drive.google.com/file/d/1FqvDF3aC3a-GJtuVDR3YyWkuZmup6CzL/view?usp=sharing",
+    },
     ];
+
+
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-sky-50 to-emerald-50 dark:from-gray-950 dark:via-gray-950 dark:to-gray-950">
@@ -122,7 +192,7 @@ export default function App() {
                         <a href="#contact" className="text-gray-700 dark:text-gray-200 hover:text-emerald-600 transition">Contact</a>
                         <a
                             id="resume-btn"
-                            href="/Mira_Saini_Resume.pdf" // Replace with your file path
+                            href="/Mira_Saini_Resume_2025.pdf" // Replace with your file path
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 rounded-full border border-emerald-300 dark:border-emerald-700 px-3 py-1.5 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-50 dark:hover:bg-emerald-900/40 transition"
@@ -148,7 +218,7 @@ export default function App() {
                     <div className="mt-6 flex sm:hidden justify-center gap-3">
                         <a
                             id="resume-btn-mobile"
-                            href="/Mira_Saini_Resume.pdf"
+                            href="/Mira_Saini_Resume_2025.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 rounded-full border border-emerald-300 px-4 py-2 text-emerald-700 hover:bg-emerald-50"
@@ -240,8 +310,8 @@ export default function App() {
                                     <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-300">{x.range}</span>
                                 </div>
                                 <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2 text-sm sm:text-base">
-                                    {x.bullets.map((b) => (
-                                        <li key={b}>{b}</li>
+                                    {x.bullets.map((b, idx) => (
+                                        <li key={idx}>{b}</li>
                                     ))}
                                 </ul>
                             </article>
@@ -251,23 +321,50 @@ export default function App() {
 
                 {/* Future */}
                 <section id="future" className="mb-16">
-                    <div className="bg-gradient-to-br from-emerald-500 via-sky-500 to-emerald-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl">
-                        <div className="flex items-center gap-3 mb-6">
-                            <Rocket className="w-8 h-8" />
-                            <h3 className="text-2xl sm:text-3xl font-bold">What's Next?</h3>
-                        </div>
-                        <div className="space-y-4 text-base sm:text-lg leading-relaxed">
-                            <p>
-                                My vision is to build AI systems that genuinely empower people while addressing real-world problems. I’m focused on multimodal models,
-                                interpretability, and robust safeguards for responsible deployment.
-                            </p>
-                            <p>
-                                I’m excited to contribute to efficient ML, agentic systems, and human-in-the-loop AI. Goals: publish impactful papers, ship useful open-source,
-                                and mentor the next wave of engineers.
-                            </p>
-                            <p>Most importantly, I want AI aligned with human values and positive impact.</p>
-                        </div>
+                <div className="bg-gradient-to-br from-emerald-500 via-sky-500 to-emerald-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+
+                    {/* floating glow */}
+                    <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(circle_at_top_left,white,transparent_60%)]" />
+
+                    {/* Header */}
+                    <div className="flex items-center gap-3 mb-6">
+                    <Rocket className="w-8 h-8 animate-pulse" />
+                    <h3 className="text-2xl sm:text-3xl font-bold tracking-tight">
+                        What’s Next?
+                    </h3>
                     </div>
+
+                    {/* Content */}
+                    <div className="space-y-6 text-base sm:text-lg leading-relaxed">
+
+                    <p>
+                        I’m still figuring out where I fit in the ML world and that’s part of what
+                        motivates me as there’s so much to explore. My experience so far has mostly been
+                        in academic + research settings, so I’m actively looking for opportunities in
+                        industry where I can grow, work with more experienced engineers, and understand
+                        what it takes to build and deploy real systems.
+                    </p>
+
+                    <p>
+                        I’m particularly curious about the intersection of ML and healthcare. 
+                        The idea of using AI to support diagnosis, personalization, and access, 
+                        while staying careful, ethical, and human-centered, feels meaningful to me, and
+                        I’m excited to explore this direction further.
+                    </p>
+
+                    </div>
+
+                    {/* subtle divider */}
+                    <div className="my-8 h-px bg-white/20" />
+
+                    {/* Highlight chips */}
+                    <div className="flex flex-wrap gap-2 text-sm font-medium opacity-90">
+                    <span className="bg-white/20 px-3 py-1 rounded-full">Exploring ML</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full">Seeking Industry Experience</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full">Health + Responsible AI</span>
+                    </div>
+
+                </div>
                 </section>
 
                 {/* Contact */}
