@@ -97,74 +97,82 @@ export default function App() {
         company: "Tech4Good Lab — UC Santa Cruz",
         range: "Dec 2025 – Present",
         bullets: [
-        // FALL 2025 — UCSC Community Bot
-        (
-            <>
-            <div className="flex gap-2 items-start">
-                <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-                Fall 2025
-                </span>
-                <span className="font-semibold">UCSC Community Bot</span>
-            </div>
-            <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
-                Evolved our summer RAG prototype into a campus assistant used by 300+ students. Directed a 6-person
-                engineering team, improved retrieval + routing, and built an LLM-driven auto-invite flow that places
-                students into topic channels for more relevant help. Analyzed 1,000+ logs to reduce hallucinations and
-                strengthen grounding.{" "}
-                <a
-                href="https://drive.google.com/file/d/1FqvDF3aC3a-GJtuVDR3YyWkuZmup6CzL/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-                className="underline text-sky-700 dark:text-sky-300"
-                >
-                Check out our current demo
-                </a>
-                .
-            </div>
-            </>
-        ),
+    // FALL 2025 — UCSC Community Bot
+                (
+                    <>
+                        <div className="flex gap-2 items-start">
+                            <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                                Fall 2025
+                            </span>
+                            <span className="font-semibold">UCSC Community Bot</span>
+                        </div>
+                        <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
+                            Evolved our summer RAG prototype into a campus assistant used by 300+ students. Directed a 6-person
+                            engineering team, improved retrieval + routing, and built an LLM-driven auto-invite flow that places
+                            students into topic channels for more relevant support. Analyzed 1,000+ logs to reduce hallucinations
+                            and strengthen grounding.{" "}
+                            <a
+                                href="https://drive.google.com/file/d/1FqvDF3aC3a-GJtuVDR3YyWkuZmup6CzL/view?usp=sharing"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="underline text-sky-700 dark:text-sky-300"
+                            >
+                                Check out our current demo
+                            </a>.
+                        </div>
+                    </>
+                ),
 
-        // SUMMER 2025 — Community RAG Platform
-        (
-            <>
-            <div className="flex gap-2 items-start mt-4">
-                <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-                Summer 2025
-                </span>
-                <span className="font-semibold">Community RAG Platform (prototype)</span>
-            </div>
-            <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
-                Built an early career-guidance prototype that organizes 200+ professional transcripts so students can
-                explore paths with less guesswork. Led design + data structuring, produced multiple Figma storyboard
-                iterations, and coordinated 5 design cycles with feedback from 3 PhD researchers + the PI.
-            </div>
-            </>
-        ),
+                // SUMMER 2025 — Community RAG
+                (
+                    <>
+                        <div className="flex gap-2 items-start mt-4">
+                            <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                                Summer 2025
+                            </span>
+                            <span className="font-semibold">Community RAG Platform (prototype)</span>
+                        </div>
+                        <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
+                            Built an early career-guidance platform integrating 200+ professional transcripts to help students
+                            explore career paths with less guesswork. Led design + data structuring, produced multiple storyboard
+                            iterations, and coordinated 5 design cycles with feedback from PhD researchers + PI.
+                        </div>
+                    </>
+                ),
 
-    
-        (
-            <>
-            <div className="flex gap-2 items-start mt-4">
-                <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-                Winter 2025
-                </span>
-                <span className="font-semibold">Generative AI Education Study</span>
-            </div>
-            <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
-                Helped run a 140-student “Generative AI in Business Strategy” course. Co-designed labs + rubrics,
-                mentored 23 students, and analyzed interviews + 28 transcripts (300+ annotations) to understand how
-                students use AI to plan, debug, and problem-solve, contributing to a research paper in progress.
-            </div>
-            </>
-        ),
+                // WINTER 2025 — GenAI Education Study
+                (
+                    <>
+                        <div className="flex gap-2 items-start mt-4">
+                            <span className="mt-1 inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                                Winter 2025
+                            </span>
+                            <span className="font-semibold">Generative AI Education Study</span>
+                        </div>
+                        <div className="ml-2 mt-1 text-sm opacity-90 border-l-2 border-emerald-400 pl-4">
+                            Helped run a 140-student “Generative AI in Business Strategy” course. Co-designed labs + rubrics,
+                            mentored 23 students, and analyzed interviews + 28 transcripts (300+ annotations) to study how
+                            students use AI to plan, debug, and problem-solve, contributing to a research paper in progress.
+                        </div>
+                    </>
+                ),
 
-        // Optional evolution marker
-        (
-            <div className="mt-4 text-xs italic opacity-80 ml-2">
-            Evolution: <span className="font-medium">Community RAG → UCSC Community Bot</span>
-            </div>
-        ),
-        ],
+                // SHARED RESOURCE LINK — for Summer + Winter
+                (
+                    <div className="mt-4 ml-2 text-xs opacity-80 italic">
+                        Demo from <span className="font-medium">Summer 2025 + Winter 2025</span>:{" "}
+                        <a
+                            href="https://drive.google.com/file/d/1pBwsUrdlKbTBuNPEtYMIVTroYwHWxSfP/view?usp=sharing"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline text-sky-700 dark:text-sky-300"
+                        >
+                            Video
+                        </a>
+                    </div>
+                ),
+            ],
+
 
         links: {
         demo: "https://drive.google.com/file/d/1FqvDF3aC3a-GJtuVDR3YyWkuZmup6CzL/view?usp=sharing",
@@ -243,12 +251,10 @@ export default function App() {
                         </div>
                         <div className="text-gray-800 dark:text-gray-200 space-y-4 text-base sm:text-lg leading-relaxed">
                             <p>
-                                I’m Mira — an AI/ML engineer focused on building human-centered systems. I care about AI that supports rather than replaces people,
-                                and I bring strong ethics into every design decision.
-                            </p>
-                            <p>
-                                Recently, I’ve shipped retrieval-driven assistants, model training pipelines, and classroom-ready demos that reduce friction and expand access.
-                                Across projects, I focus on practical, responsible tools that genuinely help people.
+                                Hi, I’m Mira. 
+                                I’m a CS student at UC Santa Cruz, and lately I’ve been getting really interested in machine learning. I think AI is incredibly powerful, especially when it’s used to help people make better decisions, learn faster, or access things they normally wouldn’t.
+                                I don’t believe AI should replace people; I see it more as something that can support us, not take over what makes us human. That mindset guides a lot of what I try to build.
+                                Recently, I’ve been drawn to the medical side of things. I’ve always been fascinated by health and the sciences, and I’d love to find ways for ML + AI to make care more personalized and accessible while still being careful and ethical. I’m just getting started, but combining these interests feels exciting and meaningful to me.
                             </p>
                         </div>
                     </div>
@@ -367,29 +373,79 @@ export default function App() {
                 </div>
                 </section>
 
-                {/* Contact */}
-                <section id="contact" className="mb-20">
-                    <div className="bg-white dark:bg-gray-900 rounded-3xl p-8 sm:p-12 shadow-md border border-emerald-100 dark:border-gray-800">
-                        <h3 className={sectionTitle}>Contact</h3>
-                        <p className="mt-2 text-gray-700 dark:text-gray-300">Feel free to reach out — I’m always happy to connect.</p>
-                        <div className="mt-6 flex flex-wrap gap-3">
-                            <a
-                                href="mailto:misaini@ucsc.edu"
-                                className="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-                            >
-                                <Mail className="w-4 h-4" /> misaini@ucsc.edu
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/mira-saini-464938362/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-                            >
-                                <Linkedin className="w-4 h-4" /> LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                </section>
+{/* Contact */}
+<section id="contact" className="mb-14">
+    <div className="relative rounded-3xl p-6 sm:p-10 shadow-lg border border-emerald-100/60 dark:border-gray-800 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md overflow-hidden">
+
+        {/* soft background glow */}
+        <div className="absolute inset-0 opacity-25 pointer-events-none bg-gradient-to-br from-emerald-200/20 via-sky-200/10 to-transparent dark:from-emerald-700/10 dark:via-sky-700/10" />
+
+        {/* Header Chip */}
+        <div className="relative inline-flex mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-emerald-500 to-sky-500 text-white text-sm font-semibold">
+                Let’s Connect
+            </div>
+        </div>
+
+        <h3 className={sectionTitle}>Contact</h3>
+
+        <p className="mt-1 text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed">
+            Happy to talk about AI, research, building tools, or anything fun.
+        </p>
+
+        {/* Contact Buttons */}
+        <div className="mt-6 flex flex-wrap gap-4 items-center relative">
+            {/* Email */}
+            <button
+                onClick={() => {
+                    navigator.clipboard.writeText("misaini@ucsc.edu");
+                    const toast = document.createElement("div");
+                    toast.innerText = "Copied!";
+                    toast.className =
+                        "fixed bottom-6 right-6 bg-emerald-600 text-white text-sm px-3 py-1.5 rounded-lg shadow-md animate-fade-out";
+                    document.body.appendChild(toast);
+                    setTimeout(() => toast.remove(), 1200);
+                }}
+                className="group inline-flex items-center gap-2 rounded-full border border-emerald-400/60 dark:border-emerald-700/60 px-4 py-2 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-50 dark:hover:bg-emerald-900/40 transition"
+            >
+                <Mail className="w-4 h-4 group-hover:scale-110 transition" />
+                misaini@ucsc.edu
+                <span className="text-[11px] opacity-60 ml-1 group-hover:opacity-100 transition">
+                    (copy)
+                </span>
+            </button>
+
+            {/* LinkedIn */}
+            <a
+                href="https://www.linkedin.com/in/mira-saini-464938362/"
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full border border-sky-400/60 dark:border-sky-700/60 px-4 py-2 text-sky-700 dark:text-sky-200 hover:bg-sky-50 dark:hover:bg-sky-900/40 transition"
+            >
+                <Linkedin className="w-4 h-4 group-hover:scale-110 transition" />
+                LinkedIn
+            </a>
+        </div>
+
+        {/* Little detail footer */}
+        <div className="relative mt-6 text-sm text-gray-500 dark:text-gray-400 italic">
+            Always happy to connect ✦
+        </div>
+    </div>
+
+    {/* fade-out animation */}
+    <style>{`
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            70% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .animate-fade-out {
+            animation: fadeOut 1.2s forwards;
+        }
+    `}</style>
+</section>
+
             </main>
 
             <footer className="border-t border-emerald-100 dark:border-gray-800 bg-white/50 dark:bg-gray-900/60 backdrop-blur-sm py-8">
