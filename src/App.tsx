@@ -1,3 +1,4 @@
+/** npm run build, npm run deploy*/
 import React, { useEffect, useMemo, useState } from "react";
 import { Heart, Star, Sparkles, Rocket, Briefcase, Code, Moon, Sun, FileDown, Mail, Linkedin } from "lucide-react";
 
@@ -250,9 +251,9 @@ export default function App() {
                     <div className="inline-block mb-6 animate-bounce">
                         <Heart className="w-16 h-16 sm:w-20 sm:h-20 text-emerald-500 fill-emerald-500" />
                     </div>
-                    <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4">Welcome!</h2>
+                    <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4">AI Engineer / Applied ML Engineer</h2>
                     <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                        Building intelligent systems that empower humans
+                        Retrieval systems, agentic workflows, and end-to-end AI products
                     </p>
                     {/* Mobile buttons */}
                     <div className="mt-6 flex sm:hidden justify-center gap-3">
