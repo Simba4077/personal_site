@@ -251,7 +251,7 @@ export default function App() {
                     <div className="inline-block mb-6 animate-bounce">
                         <Heart className="w-16 h-16 sm:w-20 sm:h-20 text-emerald-500 fill-emerald-500" />
                     </div>
-                    <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-4">AI Engineer / Applied ML Engineer</h2>
+                    <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">Applied AI/ML Engineer</h2>
                     <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
                         Retrieval systems, agentic workflows, and end-to-end AI products
                     </p>
