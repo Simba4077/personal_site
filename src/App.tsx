@@ -52,7 +52,23 @@ export default function App() {
     const projects = useMemo(
         () => [
             {
-                title: "AddIt — Event Poster → Google Calendar (Streamlit + Gemini)",
+                title: "Multi-Genre Music Classification Dataset",
+                summary: "A large-scale audio dataset and machine learning pipeline for multi-genre music classification. Includes feature extraction, dataset curation, and baseline models to support reproducible ML experimentation and analysis.",
+                featuredColor: "emerald",
+                tags: [
+                    "Machine Learning",
+                    "Data Engineering",
+                    "Audio ML",
+                    "Feature Extraction",
+                    "Model Evaluation"
+                ],
+                links: {
+                    repo: "https://github.com/s1mpl6nam6/final-neur-research-proj"
+                }
+                }
+                ,
+            {
+                title: "AddIt: Poster to Google Calendar",
                 summary:
                     "A lightweight tool that helps students turn event posters into Google Calendar events in just a few seconds. Instead of manually typing details from flyers, AddIt extracts the title, date, time, and location, then drafts an event for quick review + save. Built originally in Streamlit with Gemini; helped reduce the typical “poster → calendar” workflow from about a minute to under 10 seconds.",
                 tags: ["LLMs", "Python", "Streamlit", "Google Calendar API"],
@@ -64,12 +80,28 @@ export default function App() {
                 featuredColor: "emerald",
             },
             {
+                title: "ATS Resume Optimizer",
+                summary: "An AI-powered system that analyzes resumes against job descriptions to provide structured feedback, keyword alignment, and targeted rewrites. Designed to help users improve ATS compatibility while preserving clarity and authenticity.",
+                featuredColor: "emerald",
+                tags: [
+                    "Applied ML",
+                    "LLMs",
+                    "NLP",
+                    "AI Products",
+                    "System Design"
+                ],
+                links: {
+                    repo: "https://github.com/Simba4077/ATS-Resume-Optimizer"
+                }
+                }
+                ,
+            {
                 title: "NumPy CNN — CIFAR-10 Image Classifier",
                 summary:
                     "A simple experiments-driven project where I implemented core CNN operations (convolution, pooling, activations, fully-connected layers) from scratch in NumPy. I wanted to better understand how image classifiers work under the hood — not just call a library. The model reached ~50–60% accuracy on CIFAR-10.",
                 tags: ["Python", "CNN", "NumPy", "ML"],
                 links: { demo: "DEMO_LINK_HERE", repo: "https://github.com/Simba4077/Convolutional-Neural-Network", doc: "DOC_LINK_HERE" },
-                featuredColor: "sky",
+                featuredColor: "lime",
             },
             {
                 title: "MLP MNIST Classifier — Training Pipeline",
@@ -77,7 +109,7 @@ export default function App() {
                     "A minimal handwritten-digit classifier trained on MNIST using a custom MLP training loop. Focused on understanding data prep, batching, accuracy + loss tracking, and model evaluation. Achieved >97% accuracy.",
                 tags: ["MLP", "NumPy", "MNIST"],
                 links: { demo: "DEMO_LINK_HERE", repo: "https://github.com/Simba4077/MLP-MNIST-Classifier", doc: "DOC_LINK_HERE" },
-                featuredColor: "emerald",
+                featuredColor: "lime",
             },
             {
                 title: "English–Dutch Language Classifier",
@@ -85,7 +117,7 @@ export default function App() {
                     "A small language-classification project comparing three traditional ML models — logistic regression, SVM, and perceptron — on translated text samples. It was a fun way to explore feature extraction + evaluation. Models reached 100% accuracy on a held-out dataset.",
                 tags: ["Feature Extraction", "SVM", "Logistic Regression", "Perceptron"],
                 links: { demo: "DEMO_LINK_HERE", repo: "https://github.com/Simba4077/English-Dutch-Classification", doc: "DOC_LINK_HERE" },
-                featuredColor: "sky",
+                featuredColor: "lime",
             },
         ],
         []
@@ -250,12 +282,21 @@ export default function App() {
                             <h3 className={sectionTitle}>About Me</h3>
                         </div>
                         <div className="text-gray-800 dark:text-gray-200 space-y-4 text-base sm:text-lg leading-relaxed">
-                            <p>
-                                Hi, I’m Mira. 
-                                I’m a CS student at UC Santa Cruz, and lately I’ve been getting really interested in machine learning. I think AI is incredibly powerful, especially when it’s used to help people make better decisions, learn faster, or access things they normally wouldn’t.
-                                I don’t believe AI should replace people; I see it more as something that can support us, not take over what makes us human. That mindset guides a lot of what I try to build.
-                                Recently, I’ve been drawn to the medical side of things. I’ve always been fascinated by health and the sciences, and I’d love to find ways for ML + AI to make care more personalized and accessible while still being careful and ethical. I’m just getting started, but combining these interests feels exciting and meaningful to me.
+                           <p>
+                            Hi, I’m Mira. I'm a Computer Science student at UC Santa Cruz and a Generative AI Lead at the Tech4Good Lab.
+                            I build applied AI and machine learning systems that help people navigate information, make better decisions, and access opportunities more easily.
                             </p>
+
+                            <p>
+                            My work focuses on retrieval-driven and agentic AI systems, where models are combined with strong data pipelines, evaluation, and thoughtful product design.
+                            I’ve led and contributed to end-to-end AI applications involving retrieval-augmented generation, workflow orchestration, and real-world deployment.
+                            </p>
+
+                            <p>
+                            I care deeply about building AI that is reliable, human-centered, and useful in practice.
+                            I’m especially interested in problems where machine learning meets product and systems design.
+                            </p>
+
                         </div>
                     </div>
                 </section>
@@ -342,21 +383,19 @@ export default function App() {
 
                     {/* Content */}
                     <div className="space-y-6 text-base sm:text-lg leading-relaxed">
+                        <p>
+                        I’m excited to continue building real-world software and machine learning systems in industry settings.
+                        While much of my experience has been in academic and research-driven environments, I’m actively seeking opportunities where I can contribute as a software engineer, AI engineer, or applied ML engineer while learning from experienced teams.
+                        </p>
 
-                    <p>
-                        I’m still figuring out where I fit in the ML world and that’s part of what
-                        motivates me as there’s so much to explore. My experience so far has mostly been
-                        in academic + research settings, so I’m actively looking for opportunities in
-                        industry where I can grow, work with more experienced engineers, and understand
-                        what it takes to build and deploy real systems.
-                    </p>
+                        <p>
+                        I enjoy working across the stack, from core software and data pipelines to machine learning models and user-facing applications.
+                        I’m especially interested in roles where engineering rigor, thoughtful system design, and practical AI come together to create reliable, scalable products.
+                        </p>
 
-                    <p>
-                        I’m particularly curious about the intersection of ML and healthcare. 
-                        The idea of using AI to support diagnosis, personalization, and access, 
-                        while staying careful, ethical, and human-centered, feels meaningful to me, and
-                        I’m excited to explore this direction further.
-                    </p>
+                        <p>
+                        I’m open to a wide range of SWE, AI, and ML roles, and I’m motivated by opportunities that prioritize learning, impact, and responsible technology.
+                        </p>
 
                     </div>
 
@@ -365,9 +404,9 @@ export default function App() {
 
                     {/* Highlight chips */}
                     <div className="flex flex-wrap gap-2 text-sm font-medium opacity-90">
-                    <span className="bg-white/20 px-3 py-1 rounded-full">Exploring ML</span>
-                    <span className="bg-white/20 px-3 py-1 rounded-full">Seeking Industry Experience</span>
-                    <span className="bg-white/20 px-3 py-1 rounded-full">Health + Responsible AI</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full">ML</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full">AI</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full">SWE</span>
                     </div>
 
                 </div>
@@ -429,7 +468,7 @@ export default function App() {
 
         {/* Little detail footer */}
         <div className="relative mt-6 text-sm text-gray-500 dark:text-gray-400 italic">
-            Always happy to connect ✦
+            Pls connect  :-)
         </div>
     </div>
 
